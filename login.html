@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Header -->
+
+    <header>
+        <h2 class="logo"><a href="index.html">Highlands Coffee®</a></h2>
+        <nav class="navigation">
+            <a href="menuCFT.html">THỰC ĐƠN</a>
+            <a href="khampha.html">KHÁM PHÁ</a>
+            <a href="ABOUTUS.html">VỀ CHÚNG TÔI</a>
+            <a href="news.html">TIN TỨC</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="form-box login">
+            <h2>Đăng Nhập</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Ghi nhớ tôi</label>
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="btn">Đăng Nhập</button>
+                <div class="login-register">
+                    <p>Bạn không có tài khoản? <a href="#" class="register-link">Đăng Ký</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box logout">
+            <h2>Đăng Ký</h2>
+            <form action="#">
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Tên người dùng</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Tôi đồng ý với các điều khoản & điều kiện</label>
+                </div>
+                <button type="submit" class="btn">Đăng Ký</button>
+                <div class="login-register">
+                    <p>Bạn đã sẵn sàng tạo 1 tài khoản? <a href="#" class="login-link">Đăng Nhập</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

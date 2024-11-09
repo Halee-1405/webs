@@ -1,0 +1,269 @@
+/* CART-PAY */
+
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.form-ODER {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-Pay {
+    margin-top: 80px;
+    margin-left: 150px;
+}
+.cart-Pay a {
+    text-decoration: none;
+    color: #c42d34;
+}
+.form-PAY {
+    display: flex;
+    font-size: 1.1em;
+}
+.form-Pay1 {
+    width: 400px;
+    margin-left: 150px;
+}
+.form-Pay1 a {
+    text-decoration: none;
+    color: #c42d34;
+}
+.form-Pay1 a:hover {
+    color: #7c1318;
+}
+.form-Pay__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-Pay__fill {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Tùy chọn: Thêm khoảng cách giữa các phần tử */
+}
+.form-Pay__fill input {
+    height: 45px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+.form-Pay__fill textarea {
+    resize: vertical; /* Cho phép textarea thay đổi kích thước theo chiều dọc */
+    min-height: 80px; /* Điều chỉnh theo nhu cầu */
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.form-Pay2 {
+    width: 400px;
+    margin-left: 40px;
+}
+
+.radio-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 70px;
+    padding-left: 10px;
+}
+.radio__label {
+    display: flex;
+    align-items: center;
+}
+
+.radio__label1 {
+    margin-right: 85px;    
+    margin-left: 5px;
+}
+.radio__label11 {
+    margin-left: 5px;
+    margin-right: 32px;
+}
+.radio__label__icon  {
+    font-size: 24px;
+    color: #3773e2;
+}
+.content__box {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-top: none ;
+    border-radius: 4px;
+    height: 70px;
+    padding-left: 10px;
+    display: none; /* Ẩn thẻ content__box ban đầu */
+}
+.content__box p {
+    margin-top: 0;
+    padding-top: 25px;
+}
+
+.form-PayBILL {
+    width: 500px;
+    height: 100vh;
+    background-color: #fafafa;
+    border-left: 1px solid #e1e1e1;
+    font-family: Helvetica Neue,sans-serif;
+}
+
+
+.form-PayBILLs {
+    width: 400px;
+    height: 800px;
+}
+
+.form-PayBill__header {
+    border-bottom: 1px solid #e1e1e1;
+}
+.form-PayBill__header h3 {
+    margin-left: 25px;
+    font-size: 1.3em;
+}
+
+.form-PayBill__header h3 {
+    font-size: 1.3em;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.cart-item-info {
+    margin-left: 10px;
+}
+
+.cart-item-title {
+    font-size: 1.1em;
+}
+
+.cart-item-size,
+.cart-item-price,
+.cart-item-quantity {
+    font-size: 0.9em;
+}
+
+
+.total-summary p,
+.total-summary h3 {
+    text-align: right;
+    margin-right: 20px;
+}
+
+
+/* CSS cho phần số lượng */
+.cart-item-details {
+    position: relative;
+    display: flex;
+}
+.cart-item-quantity {
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    top: -5px; /* Căn chỉnh vị trí từ trên xuống */
+    left: 40px; /* Căn chỉnh vị trí từ phải qua */
+    background-color: #c42d34; /* Màu nền của số */
+    color: white; /* Màu chữ của số */
+    border-radius: 50%; /* Làm tròn số */
+    width: 18px; /* Chiều rộng của số */
+    height: 18px; /* Chiều cao của số */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px; /* Kích thước chữ của số */
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px solid #e1e1e1;
+    position: relative;
+}
+
+
+
+
+#order-summary {
+    padding: 20px;
+    max-height: 460px; /* Set a maximum height for the order summary */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+}
+
+/* Summary Section Styles */
+.summary-section {
+    border-top: 1px solid #e1e1e1;
+    margin-left: 20px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+.summary-section button{
+    padding: 12px 32px;
+    background-color: #c42d34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: .3s;
+}
+.summary-section button:hover {
+    background-color: #c97074;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.summary-item.total {
+    font-weight: bold;
+}
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.return-cart {
+    display: inline-block;
+    text-decoration: none;
+    color: #3773e2;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.return-cart:hover {
+    color: #c42d34;
+}
+.return-cart span {
+    margin-left: 5px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="cart-Pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="form-ODER">
+
+        <div class="form-PayFILL">
+
+            <h1 class="cart-Pay">
+                <a href="index.html">Highlands Coffee®</a>
+            </h1>
+            
+            <div class="form-PAY">
+        
+                <div class="form-Pay1">
+                    <div class="form-Pay__header">
+                        <h3>Thông tin nhận hàng</h3>
+                        <a href="login.html">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                    </div>
+                    <div class="form-Pay__fill">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <input type="text" name="username" placeholder="Họ và tên" required>
+                        <input type="text" name="numberphone" placeholder="Số điện thoại" required>
+                        <input type="text" name="location" placeholder="Địa chỉ" required>
+                        <textarea id="note" name="note" placeholder="Ghi chú"></textarea>
+                    </div>
+                </div>
+            
+                <div class="form-Pay2">
+        
+                    <div class="form-Pay__header">
+                        <h3>Vận chuyển</h3>
+                    </div>
+        
+                    <div class="radio-wrapper">
+                        <div class="radio__input">
+                            <input id="shipTransport" name="shipTransport" type="radio" checked>
+                        </div>
+                        <label class="radio__label">
+                            <span class="radio__label11">Giao hàng tận nơi (Đơn dưới 99,000đ <br>
+                                                         khách hàng vui lòng trả thêm 10,000đ)</span>
+                            <span class="radio__label22">
+                                <span class="radio__label__price">
+                                    10.000₫
+                                </span>
+                            </span>                        
+                        </label>
+                    </div>
+        
+                    <div class="form-Pay__header">
+                        <h3>Thanh toán khi giao hàng</h3>
+                    </div>
+        
+                    <div class="radio-wrapper">
+                        <div class="radio__input">
+                            <input id="paymentMethod" name="paymentMethod" type="radio">
+                        </div>
+                        <label class="radio__label">
+                            <span class="radio__label1">Thanh toán khi giao hàng (COD)</span>
+                            <span class="radio__label2">
+                                <span class="radio__label__icon">
+                                    <i class="fa-solid fa-money-bill"></i>
+                                </span>
+                            </span>                        
+                        </label>
+                    </div>
+            
+                    <div class="content__box">
+                        <p>Thanh toán khi giao hàng</p>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    
+        <!-- Cart-Bill -->
+
+        <div class="form-PayBILL">
+
+            <div class="form-PayBILLs">
+
+                <div class="form-PayBill__header">
+                    <h3>Đơn hàng (<span id="total-items"></span> sản phẩm)</h3>
+                </div>
+
+                <div id="order-summary" class="order-summary-scroll">
+                    <!-- Đơn hàng sẽ được thêm vào đây -->
+                </div>
+    
+                <!-- Add the summary section -->
+                <div class="summary-section">
+                    <p class="summary-item"><span>Tạm tính:</span> <span id="subtotal"></span></p>
+                    <p class="summary-item"><span>Phí vận chuyển:</span> <span id="shipping-fee">Miễn phí</span></p>
+                    <p class="summary-item total"><span>Tổng cộng:</span> <span id="total-amount"></span></p>
+                    <div class="buttons-container">
+                        <a href="cartView.html" class="return-cart">
+                            <i class="fa fa-arrow-left"></i> <span>Quay về giỏ hàng</span>
+                        </a>
+                        <button class="checkout-button" onclick="checkout()">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+
+</script>
+    <script src="cart-Pay.js"></script>
+    <script src="scriptcart.js"></script>
+
+</body>
+</html>

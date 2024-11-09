@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanh Dây Đá Viên</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!--NAV -->
+
+    <div class="nav">
+        <ul class="nav-logo">     
+            <a href="index.html" class="logo">
+            <img src="img/logo1.png" alt="logo">
+            </a>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item1" id="menulist"><a href="index.html">HOME</a></li>
+            <li class="nav-item item1" id="menulist"><a href="menuCFT.html">THỰC ĐƠN</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menu-cafe.html">CAFE</a></li>
+                        <li><a href="menu-freeze.html">FREEZE</a></li>
+                        <li><a href="menu-tra.html">TRÀ</a></li>
+                        <li><a href="menu-banh.html">BÁNH</a></li>
+                        <li><a href="menu-khac.html">KHÁC</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="dislist"><a href="khampha.html">KHÁM PHÁ</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menuspecial.html">MENU ĐẶC BIỆT</a></li>
+                        <li><a href="menunguyenban.html">MENU NGUYÊN BẢN</a></li>
+                        <li><a href="menufood.html">FOOD MENU</a></li>
+                        <li><a href="menuship.html">THỰC ĐƠN GIAO HÀNG</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="aboutlist"><a href="ABOUTUS.html">VỀ CHÚNG TÔI</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="aboutus-source.html">NGUỒN GỐC</a></li>
+                        <li><a href="aboutus-service.html">DỊCH VỤ</a></li>
+                        <li><a href="aboutus-job.html">NGHỀ NGHIỆP</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="newspaper"><a href="news.html">TIN TỨC</a></li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item2" id="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="nav-item item2" id="cart"><a href="cartView.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cart-count"></span></a></li>
+            <li class="nav-item item2" id="login"><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm...">
+            <label for="search-box" id="search-btn" class="fas fa-search"></label>
+        </div>
+    </div>
+
+    <!-- Cart Shop -->
+
+    <div class="cartshop">
+
+        <div class="cartshop-img">
+            <h1 class="cart-title">
+                CHANH DÂY ĐÁ VIÊN
+            </h1>
+            <div class="cart-img">
+                <img src="img/chanh-day-da-vien.png" alt="CHANH DÂY ĐÁ VIÊN">
+            </div>
+        </div>
+
+        <div class="cartshop-buy">
+            <p align="justify">
+                Chanh Dây Đá Viên với hương chanh dây thơm mát, vị chua ngọt quen thuộc và sắc vàng bắt mắt. 
+            </p>
+            <div class="cart-price">
+                <h1 id="price">Giá: 39.000đ</h1>
+                <div class="cart-size">
+                    <h4>Kích thước:</h4>
+                    <button class="size-btn active" data-price="Giá: 39.000đ">S</button>
+                    <button class="size-btn" data-price="Giá: 49.000đ">M</button>
+                    <button class="size-btn" data-price="Giá: 55.000đ">L</button>
+                </div>
+                <div class="soluong">
+                    <h4>Số lượng:</h4>
+                    <button id="decrease"><i class="fa-solid fa-minus"></i></button>
+                    <p id="quantity">1</p>
+                    <button id="increase"><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="cart-button">
+                <button id="btn btn1"><a href="cart-Pay.html" id="buy-now">MUA NGAY</a></button>
+                <button id="btn btn2" class="add-to-cart"><a href="#">THÊM VÀO GIỎ</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Popup -->
+    <div id="cart-popup" class="cart-popup">
+        <div class="cart-popup-content">
+            <span class="close">&times;</span>
+            <h2>Giỏ Hàng</h2>
+            <div id="cart-items">
+                <p>Giỏ hàng của bạn đang trống.</p>
+            </div>
+            <button class="checkout-btn" id="checkout-button"><a href="cart-Pay.html">Thanh Toán</a></button>
+            <button class="view-cart-btn"><a href="cartView.html">Xem Giỏ Hàng</a></button>
+        </div>
+    </div>
+
+    <!-- Slide products -->
+    <div class="product-container">
+
+        <div class="btn-container">
+            <div class="line"></div>
+            <div class="btn-slide">
+                <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="products">
+            <a href="cart-otherchanhdavien.html" class="producta">
+                <div class="product-img">
+                    <img src="img/chanh-da-vien.png" alt="CHANH ĐÁ VIÊN">
+                </div>
+                <div class="product-price">         
+                    <h2 class="name">CHANH ĐÁ VIÊN</h2>
+                    <p class="price">Giá: <b>39,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-otherchanhnong.html" class="producta">
+                <div class="product-img">
+                    <img src="img/chanh-nong.png" alt="CHANH NÓNG">
+                </div>
+                <div class="product-price">         
+                    <h2 class="name">CHANH NÓNG</h2>
+                    <p class="price">Giá: <b>39,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-othersocolanong.html" class="producta">
+                <div class="product-img">
+                    <img src="img/socola-nong.png" alt="SOCOLA NÓNG">
+                </div>
+                <div class="product-price">         
+                    <h2 class="name">SOCOLA NÓNG</h2>
+                    <p class="price">Giá: <b>39,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-othersuatuoinong.html" class="producta">
+                <div class="product-img">
+                    <img src="img/sua-tuoi-nong.png" alt="SỮA TƯƠI NÓNG">
+                </div>
+                <div class="product-price">         
+                    <h2 class="name">SỮA TƯƠI NÓNG</h2>
+                    <p class="price">Giá: <b>39,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-othertacdavien.html" class="producta">
+                <div class="product-img">
+                    <img src="img/tac-da-vien.png" alt="TẮC ĐÁ VIÊN">
+                </div>
+                <div class="product-price">         
+                    <h2 class="name">TẮC ĐÁ VIÊN</h2>
+                    <p class="price">Giá: <b>39,000 VNĐ</b></p>
+                </div>
+            </a>
+        </div>
+    
+    </div>
+
+    <!-- INFORMATION-BAR -->
+    <div class="inform">
+        <div class="icons">
+            <a href="https://www.facebook.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCHEqa2uTf8uXrGWrnU3ThgA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p class="reserve">© 2018 Highlands Coffee. All rights reserved</p>
+        <p class="hotline">Đặt hàng: 19001755 </p>
+        <div class="email">
+            <a href="#"><i class="fa-solid fa-envelope"></i> &emsp; customerservice@highlandscoffee.com.vn</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="scriptcart.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Highlands Cofee</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!--NAV -->
+
+    <div class="nav">
+        <ul class="nav-logo">     
+            <a href="index.html" class="logo">
+            <img src="img/logo1.png" alt="logo">
+            </a>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item1" id="menulist"><a href="index.html">HOME</a></li>
+            <li class="nav-item item1" id="menulist"><a href="menuCFT.html">THỰC ĐƠN</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menu-cafe.html">CAFE</a></li>
+                        <li><a href="menu-freeze.html">FREEZE</a></li>
+                        <li><a href="menu-tra.html">TRÀ</a></li>
+                        <li><a href="menu-banh.html">BÁNH</a></li>
+                        <li><a href="menu-khac.html">KHÁC</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="dislist"><a href="khampha.html">KHÁM PHÁ</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menuspecial.html">MENU ĐẶC BIỆT</a></li>
+                        <li><a href="menunguyenban.html">MENU NGUYÊN BẢN</a></li>
+                        <li><a href="menufood.html">FOOD MENU</a></li>
+                        <li><a href="menuship.html">THỰC ĐƠN GIAO HÀNG</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="aboutlist"><a href="ABOUTUS.html">VỀ CHÚNG TÔI</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="aboutus-source.html">NGUỒN GỐC</a></li>
+                        <li><a href="aboutus-service.html">DỊCH VỤ</a></li>
+                        <li><a href="aboutus-job.html">NGHỀ NGHIỆP</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="newspaper"><a href="news.html">TIN TỨC</a></li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item2" id="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="nav-item item2" id="cart"><a href="cartView.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cart-count"></span></a></li>
+            <li class="nav-item item2" id="login"><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm...">
+            <label for="search-box" id="search-btn" class="fas fa-search"></label>
+        </div>
+    </div>
+
+    <!-- Block động  -->
+
+    <div class="vnt-content">
+             
+        <div class="block-about bg1">
+            <div class="imgA imgA1 lazy-start fadeIn" data-eff="fadeIn" data-delay="0.3" style="animation-delay: 0.3s;">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/about/ABOUT-CAREER3.jpg" alt="NGUỒN GỐC">
+                <div class="over"></div>
+            </div>
+
+            <div class="captionWrapA captionWrapA1">
+                <div class=" wrapperA hidden ">
+                    <div class="captionA">
+                        <div class="tendA tendA1 lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.3" style="animation-delay: 0.3s;">
+                            <a href="aboutus-source.html">NGUỒN GỐC</a>
+                        </div>
+
+                        <div class="desA lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.5" style="animation-delay: 0.5s;">
+                            <p><span style="font-size:20px;">CÂU CHUYỆN NÀY LÀ CỦA CHÚNG MÌNH</span></p>
+                            <p><span style="font-family:Roboto,sans-serif;">
+                                <span style="font-size:16px;">
+                                    <span style="line-height:115%">
+                                    <span style="line-height:115%">
+                                        Highlands Coffee® được thành lập vào năm 1999, 
+                                        bắt nguồn từ tình yêu dành cho đất Việt 
+                                        cùng với cà phê và cộng đồng nơi đây.&nbsp;
+                                        Ngay từ những ngày đầu tiên, mục tiêu của chúng mình 
+                                        là có thể phục vụ và góp phần phát triển cộng đồng bằng cách 
+                                        siết chặt thêm sự kết nối và sự gắn bó giữa người với người.
+                                </span>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="linkA linkA1 lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7" style="animation-delay: 0.7s;">
+                            <a href="aboutus-source.html">
+                                <span>XEM CHI TIẾT</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="block-about bg2">
+            <div class="imgA imgA2 lazy-start fadeIn" data-eff="fadeIn" data-delay="0.3" style="animation-delay: 0.3s;">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/about/Highlands_4577_R3_-_Copy.jpg" alt="DỊCH VỤ">
+                <div class="over"></div>
+            </div>
+
+            <div class="captionWrapA captionWrapA2">
+                <div class=" wrapperA hidden">
+                    <div class="captionA" style="width: 800px;">
+                        <div class="tendA tendA2 lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.3" style="animation-delay: 0.3s;">
+                            <p align="right"><a href="aboutus-service.html">DỊCH VỤ</a></p>
+                        </div>
+                        <div class="desA lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.5" style="animation-delay: 0.5s;">
+                            <p align="right"><span style="font-size:20px;">DỊCH VỤ NÀY LÀ CỦA CHÚNG MÌNH</span></p>
+                            <p align="right"><span style="font-family:Roboto,sans-serif;">
+                                <span style="font-size:16px;">
+                                    <span style="line-height:115%">
+                                    <span style="line-height:115%">
+                                        Highlands Coffee® là không gian của chúng mình nên mọi thứ 
+                                        ở đây đều vì sự thoải mái của chúng mình.&nbsp;
+                                        Đừng giữ trong lòng, hãy chia sẻ với chúng mình điều bạn
+                                        mong muốn để cùng nhau giúp Highlands Coffee® trở nên tuyệt vời hơn. 
+                                </span>
+                                </span>
+                            </p>
+                        </div>  
+                        <div class="linkA linkA2 lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7" style="animation-delay: 0.7s;">
+                            <a href="aboutus-service.html">
+                                <span>XEM CHI TIẾT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="block-about bg3">
+            <div class="imgA imgA3 lazy-start fadeIn" data-eff="fadeIn" data-delay="0.3" style="animation-delay: 0.3s;">
+                <img src="https://www.highlandscoffee.com.vn/vnt_upload/about/Highlands_5557_R3_-_Copy.jpg" alt="NGHỀ NGHIỆP">
+                <div class="over"></div>
+            </div>
+
+            <div class="captionWrapA captionWrapA3">
+                <div class=" wrapperA hidden">
+                    <div class="captionA">
+                        <div class="tendA tendA3 lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.3" style="animation-delay: 0.3s;">
+                            <a href="aboutus-job.html">NGHỀ NGHIỆP</a>
+                        </div>
+                        <div class="desA lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.5" style="animation-delay: 0.5s;">
+                            <p><span style="font-size:20px;">CƠ HỘI NÀY LÀ CỦA CHÚNG MÌNH</span></p>
+                            <p><span style="font-family:Roboto,sans-serif;">
+                                <span style="font-size:16px;">
+                                    <span style="line-height:115%">
+                                    <span style="line-height:115%">
+                                        Là điểm hội tụ của cộng đồng, Highlands Coffee® luôn tìm kiếm 
+                                        những thành viên mới với mong muốn không ngừng hoàn thiện một 
+                                        không gian dành cho tất cả mọi người.&nbsp;
+                                        Chúng mình luôn chào đón bạn trở thành một phần 
+                                        của Highlands Coffee® để cùng nhau siết chặt thêm những kết nối 
+                                        và sự gắn bó giữa người với người.
+                                </span>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="linkA linkA3 lazy-start fadeInUp" data-eff="fadeInUp" data-delay="0.7" style="animation-delay: 0.7s;">
+                            <a href="aboutus-job.html">
+                                <span>XEM CHI TIẾT</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- INFORMATION-BAR -->
+    <div class="inform">
+        <div class="icons">
+            <a href="https://www.facebook.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCHEqa2uTf8uXrGWrnU3ThgA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p class="reserve">© 2018 Highlands Coffee. All rights reserved</p>
+        <p class="hotline">Đặt hàng: 19001755 </p>
+        <div class="email">
+            <a href="#"><i class="fa-solid fa-envelope"></i> &emsp; customerservice@highlandscoffee.com.vn</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="scriptblock.js"></script>    
+    <script src="scriptcart.js"></script>
+
+</body>
+</html>

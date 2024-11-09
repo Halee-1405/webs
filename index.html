@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlands Cofee</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!--NAV -->
+
+    <div class="nav">
+        <ul class="nav-logo">     
+            <a href="index.html" class="logo">
+            <img src="img/logo1.png" alt="logo">
+            </a>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item1" id="menulist"><a href="index.html">HOME</a></li>
+            <li class="nav-item item1" id="menulist"><a href="menuCFT.html">THỰC ĐƠN</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menu-cafe.html">CAFE</a></li>
+                        <li><a href="menu-freeze.html">FREEZE</a></li>
+                        <li><a href="menu-tra.html">TRÀ</a></li>
+                        <li><a href="menu-banh.html">BÁNH</a></li>
+                        <li><a href="menu-khac.html">KHÁC</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="dislist"><a href="khampha.html">KHÁM PHÁ</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menuspecial.html">MENU ĐẶC BIỆT</a></li>
+                        <li><a href="menunguyenban.html">MENU NGUYÊN BẢN</a></li>
+                        <li><a href="menufood.html">FOOD MENU</a></li>
+                        <li><a href="menuship.html">THỰC ĐƠN GIAO HÀNG</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="aboutlist"><a href="ABOUTUS.html">VỀ CHÚNG TÔI</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="aboutus-source.html">NGUỒN GỐC</a></li>
+                        <li><a href="aboutus-service.html">DỊCH VỤ</a></li>
+                        <li><a href="aboutus-job.html">NGHỀ NGHIỆP</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="newspaper"><a href="news.html">TIN TỨC</a></li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item2" id="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="nav-item item2" id="cart"><a href="cartView.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cart-count"></span></a></li>
+            <li class="nav-item item2" id="login"><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm...">
+            <label for="search-box" id="search-btn" class="fas fa-search"></label>
+        </div>
+    </div>
+
+    <!-- SlIDE-POSTER -->
+
+    <div class="slider">
+        <div class="slides">
+            <img src="img/1519x528p1.jpg" class="slide">
+            <img src="img/1519x528p2.jpg" class="slide">
+            <img src="img/1519x528p3.jpg" class="slide">
+            <img src="img/1519x528p4.jpg" class="slide">
+            <img src="img/1519x528p5.jpg" class="slide">
+            <!-- Thêm nhiều hình ảnh hơn khi cần thiết -->
+        </div>
+        <div class="btn">
+            <div class="nav-btn" onclick="currentSlide(1)"></div>
+            <div class="nav-btn" onclick="currentSlide(2)"></div>
+            <div class="nav-btn" onclick="currentSlide(3)"></div>
+            <div class="nav-btn" onclick="currentSlide(4)"></div>
+            <div class="nav-btn" onclick="currentSlide(5)"></div>
+            <!-- Thêm nhiều nút hơn khi cần thiết -->
+        </div>
+    </div>
+
+    <!-- MENU TỔNG -->
+    <div class="menu">
+        
+        <h1 class="title">SẢN PHẨM HOT</h1>
+        
+        <h2 class="title-son">CAFE</h2>
+
+        <div class="menu-hott">
+            <a href="cart-suada.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/phinsuada.png" alt="PHIN SỮA ĐÁ">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">PHIN SỮA ĐÁ</h2>
+                    <p class="price">Giá: <b>29,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-denda.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/phindenda.png" alt="PHIN ĐEN ĐÁ">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">PHIN ĐEN ĐÁ</h2>
+                    <p class="price">Giá: <b>29,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-bacxiuda.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/bacxiuda.png" alt="BẠC XỈU ĐÁ">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">BẠC XỈU ĐÁ</h2>
+                    <p class="price">Giá: <b>29,000 VNĐ</b></p>
+                </div>
+            </a>
+        </div>
+        
+        <h2 class="title-son">FREEZE</h2>
+        
+        <div class="menu-hott">
+            <a href="cart-freezematcha.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/freezematcha.png" alt="FREEZE TRÀ XANH">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">FREEZE TRÀ XANH</h2>
+                    <p class="price">Giá: <b>55,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-caramelfreeze.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/caramelphinfreeze.png" alt="CARAMEL PHIN FREEZE">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">CARAMEL PHIN FREEZE</h2>
+                    <p class="price">Giá: <b>55,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-cookiecream.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/cookiescream.png" alt="COOKIES & CREAM">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">COOKIES & CREAM</h2>
+                    <p class="price">Giá: <b>55,000 VNĐ</b></p>
+                </div>
+            </a>
+        </div>
+        
+        <h2 class="title-son">TRÀ</h2>
+        
+        <div class="menu-hott">
+            <a href="cart-trasenvang.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/trasenvang(cunang).png" alt="TRÀ SEN VÀNG">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">TRÀ SEN VÀNG</h2>
+                    <p class="price">Giá: <b>45,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-trathachdao.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/trathachdao.png" alt="TRÀ THẠCH ĐÀO">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">TRÀ THẠCH ĐÀO</h2>
+                    <p class="price">Giá: <b>45,000 VNĐ</b></p>
+                </div>
+            </a>
+            <a href="cart-trathachvai.html" class="list-menu">
+                <div class="list-img">
+                    <img src="img/trathachvai.png" alt="TRÀ THẠCH VẢI">
+                </div>
+                <div class="list-price">         
+                    <h2 class="name">TRÀ THẠCH VẢI</h2>
+                    <p class="price">Giá: <b>45,000 VNĐ</b></p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- POSTER-IMG-INTRODUCE -->
+
+    <!-- Poster1 -->
+    <div class="poster poster1">
+        <img src="img/poster-qc.jpg" alt="Đất Việt">
+        <p align="justify">
+            <b>Highlands Coffee</b> <br> <br>
+                Được thành lập vào năm 1999, 
+                bắt nguồn từ tình yêu dành cho đất Việt cùng với cà phê và cộng đồng nơi đây. 
+                Khởi đầu với sản phẩm cà phê đóng gói tại Hà Nội, 
+                chúng tôi đã nhanh chóng phát triển trở thành chuỗi cà phê nổi tiếng với 
+                độ phủ hơn 500 cửa hàng trên khắp Việt Nam.
+        </p>
+    </div>
+
+    <!-- Poster2 -->
+    <div class="poster poster2">
+        <p align="justify">
+            <b>Dịch Vụ</b> <br> <br>
+            DỊCH VỤ NÀY LÀ CỦA CHÚNG MÌNH <br> 
+            Highlands Coffee là không gian của chúng mình 
+            nên mọi thứ ở đây đều vì sự thoải mái của chúng mình.
+            Đừng giữ trong lòng, hãy chia sẻ với chúng mình 
+            điều bạn mong muốn để cùng nhau giúp Highlands Coffee 
+            của chúng mình trở nên tuyệt vời hơn.
+        </p>
+        <img src="img/poster22.jpg" alt="">
+    </div>
+
+    <!-- Poster3 -->
+    <div class="poster poster3">
+        <img src="img/poster-qc33.jpg" alt="">
+        <p align="justify">
+            <b>Đồ Ăn Và Thức Uống</b> <br> <br>
+            Đồ uống của Highland Coffee phù hợp với khẩu vị người Việt, 
+            đặc biệt là cà phê. 
+            Khác với các hãng cà phê khác trên thế giới, 
+            cà phê của Highland có hương vị đậm đà. 
+            Các hạt cà phê cũng được chọn lựa kỹ lưỡng 
+            bằng cách thủ công nên chất lượng luôn được đảm bảo. <br>
+            Ngoài ra, các loại thức ăn nhanh hiện nay tại Highland cũng đã được 
+            “Việt hóa” nên cải thiện được định vị thương hiệu và 
+            độ thân thiện đối với khách hàng. 
+            Highland thực hiện bỏ đi burger, khoai tây chiên và 
+            giữ lại món ăn gần gũi với người Việt là bánh mì.
+        </p>
+    </div>
+
+    <!-- INFORMATION-BAR -->
+    <div class="inform">
+        <div class="icons">
+            <a href="https://www.facebook.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCHEqa2uTf8uXrGWrnU3ThgA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p class="reserve">© 2018 Highlands Coffee. All rights reserved</p>
+        <p class="hotline">Đặt hàng: 19001755 </p>
+        <div class="email">
+            <a href="#"><i class="fa-solid fa-envelope"></i> &emsp; customerservice@highlandscoffee.com.vn</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="scriptcart.js"></script>
+
+<script>
+
+</script>
+
+</body>
+</html>

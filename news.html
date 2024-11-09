@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức | Highlands Cofee</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!--NAV -->
+
+    <div class="nav">
+        <ul class="nav-logo">     
+            <a href="index.html" class="logo">
+            <img src="img/logo1.png" alt="logo">
+            </a>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item1" id="menulist"><a href="index.html">HOME</a></li>
+            <li class="nav-item item1" id="menulist"><a href="menuCFT.html">THỰC ĐƠN</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menu-cafe.html">CAFE</a></li>
+                        <li><a href="menu-freeze.html">FREEZE</a></li>
+                        <li><a href="menu-tra.html">TRÀ</a></li>
+                        <li><a href="menu-banh.html">BÁNH</a></li>
+                        <li><a href="menu-khac.html">KHÁC</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="dislist"><a href="khampha.html">KHÁM PHÁ</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="menuspecial.html">MENU ĐẶC BIỆT</a></li>
+                        <li><a href="menunguyenban.html">MENU NGUYÊN BẢN</a></li>
+                        <li><a href="menufood.html">FOOD MENU</a></li>
+                        <li><a href="menuship.html">THỰC ĐƠN GIAO HÀNG</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="aboutlist"><a href="ABOUTUS.html">VỀ CHÚNG TÔI</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="aboutus-source.html">NGUỒN GỐC</a></li>
+                        <li><a href="aboutus-service.html">DỊCH VỤ</a></li>
+                        <li><a href="aboutus-job.html">NGHỀ NGHIỆP</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item item1" id="newspaper"><a href="news.html">TIN TỨC</a></li>
+        </ul>
+        <ul class="nav-list">
+            <li class="nav-item item2" id="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li class="nav-item item2" id="cart"><a href="cartView.html"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count" id="cart-count"></span></a></li>
+            <li class="nav-item item2" id="login"><a href="login.html">ĐĂNG NHẬP</a></li>
+        </ul>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Tìm kiếm...">
+            <label for="search-box" id="search-btn" class="fas fa-search"></label>
+        </div>
+    </div>
+
+    <!-- NEWS -->
+    <div class="news">
+
+        <h1>TIN TỨC</h1>
+
+        <div class="new-imgs">
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/3-tang-sang-tao-phindi-cassia-co-gi-ma-hap-dan-den-the-.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/06_2024/_PhinDiCassia/thumbs/470_crop_THY_HAI_-_1.7_2.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>3 TẦNG "SÁNG TẠO" PHINDI CASSIA CÓ GÌ MÀ HẤP DẪN ĐẾN THẾ?</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>01/07/2024, 09:42</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/trong-phindi-cassia-co-gi-ma-sang-tao-den-the-.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/06_2024/_PhinDiCassia/thumbs/470_crop_post-2_thumbnail.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>TRONG PHINDI CASSIA CÓ GÌ MÀ SÁNG TẠO ĐẾN THẾ?</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>24/06/2024, 09:26</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/phindi-cassia-que-am-phin-em-phong-vi-doc-dao.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/06_2024/_PhinDiCassia/thumbs/470_crop_HCO_7745_PHINDI_CASSIA_SOCIAL_WEBSITE_470X314.png" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>PHINDI CASSIA - QUẾ ẤM PHIN ÊM, PHONG VỊ ĐỘC ĐÁO</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>14/06/2024, 16:49</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-imgs">
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/mung-quoc-te-thieu-nhi-1-6-cung-di-highlands-co-kemdi-ngon-cho-ca-nha.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/06_2024/IS/thumbs/470_crop_HCO_7733_SUMMER_2024_KEMDI_BANNER_WEB_653x437.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>MỪNG QUỐC TẾ THIẾU NHI 1.6 - CÙNG ĐI HIGHLANDS CÓ KEMDI NGON CHO CẢ NHÀ</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>30/05/2024, 16:08</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/ai-se-la-chu-nhan-cua-tam-ve-maldives-dau-tien.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/05_2024/BRAND/thumbs/470_crop_Banner_Event_Facebook_Maldives.png" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>AI SẼ LÀ CHỦ NHÂN CỦA TẤM VÉ MALDIVES ĐẦU TIÊN?</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>15/05/2024, 22:06</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/rinh-ve-maldives-ra-khoi-chill-he-cung-highlands-thoi-.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/05_2024/BRAND/thumbs/470_crop_new-hco_7739_summer_maldives_digital_banner_417x314_1.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>RINH VÉ MALDIVES, RA KHƠI CHILL HÈ CÙNG HIGHLANDS</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>03/05/2024, 12:15</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-imgs">
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/chill-he-co-tran-chau-trang-ngoc-trai-chi-9k.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/04_2024/thumbs/470_crop_TRAN_CHAU-THUMBNAIL-417X314.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>CHILL HÈ! CÓ TRÂN CHÂU TRẮNG</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>22/04/2024, 16:44</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/chill-he-them-vui-voi-bo-doi-dau-tam-freeze-kem-may.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/04_2024/thumbs/470_crop_HCO-7733-SUMMER-2024-SOCIAL-THUMBNAIL-417X314.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>CHILL HÈ THÊM VUI VỚI BỘ ĐÔI DÂU TẰM: FREEZE KEM MÂY & TRÀ NGỌC TRAI THẬT NGON!</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>15/04/2024, 12:07</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/100-thang-maldives-may-man-nhieu-tuan.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/05_2024/DC/thumbs/470_crop_Artboard_28.png" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>100% Thắng - Maldives May Mắn Nhiều Tuần</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>09/04/2024, 14:43</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-imgs">
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/thanh-mat-dau-tam-bo-doi-freeze-kem-may.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/Mulberry/thumbs/470_crop_HCO-7733-SUMMER-2024-SOCIAL-THUMBNAIL-417X314.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>THANH MÁT DÂU TẰM! BỘ ĐÔI FREEZE KEM MÂY & TRÀ NGỌC</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>31/03/2024, 12:00</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/-tet-ma-chu-nhan-sieu-xe-bac-ty-da-lo-dien.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/02_2024/thumbs/470_crop_428299745_792319336254411_4995378142312099918_n.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>[TẾT MÀ] CHỦ NHÂN SIÊU XE BẠC TỶ ĐÃ LỘ DIỆN</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>27/02/2024, 12:27</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/lich-hoat-dong-tet-nguyen-dan-2024-cua-highlands-coffee-tren-toan-quoc.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/LICH_TET_2024/thumbs/470_crop_HCO_7727_TET_2024_OPERATION_TIME_BANNER_WEB_03.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>LỊCH HOẠT ĐỘNG TẾT NGUYÊN ĐÁN 2024 CỦA HIGHLANDS</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>25/01/2024, 11:28</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-imgs">
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/tet-ma-tang-van-the-vang-ruoc-xe-bac-ty.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/01_2024/thumbs/470_crop_HCO_7727_TET_2024-WEBSITE_470x314.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>Tết mà! TẶNG VẠN THẺ VÀNG, RƯỚC XE BẠC TỶ</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>05/01/2024, 19:10</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/24-nam-chung-minh-highlands-co-phin-sua-da-19k.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/11_2023/BIRTHDAYHIGHLANDS/thumbs/470_crop_HCO-7723-24TH-BIRTHDAY-DIGITAL-471X314.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>24 NĂM CHÚNG MÌNH, HIGHLANDS CÓ PHIN SỮA ĐÁ</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>03/11/2023, 14:39</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/thom-qua-mong-ngot-anh-dao-bo-doi-tra.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/10_2023/Cherry/thumbs/470_crop_HCO_7719_CHERRY_BERRY_DIGITAL-Banner_471x3142x_1.png" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>THƠM QUẢ MỌNG, NGỌT ANH ĐÀO! BỘ ĐÔI TRÀ & FREEZE</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>31/10/2023, 18:51</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-imgs">
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/dieu-khoan-su-dung-doi-voi-the-highlands-coffee.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/01_2024/thumbs/470_crop_Giftcard_webiste_banner_22_home_banner.png" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>ĐIỀU KHOẢN SỬ DỤNG ĐỐI VỚI THẺ HIGHLANDS COFFEE</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>15/11/2023, 15:42</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/chuong-trinh-thanh-vien-highlands-coffee-da-chinh-thuc-co-mat.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/10_2023/thumbs/470_crop_Vani-x-HLC_Blog-thumbnail.png" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>CHƯƠNG TRÌNH THÀNH VIÊN HIGHLANDS COFFEE ĐÃ CHÍNH</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>26/10/2023, 19:10</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/kemdi-the-he-kem-moi-cua-highlands-coffee.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/10_2023/KEMDI/thumbs/470_crop_THUMNAIL_471x314.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>KEMDI, THẾ HỆ KEM MỚI CỦA HIGHLANDS COFFEE</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>15/10/2023, 08:00</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="new-imgs">
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/dau-tu-gan-500-ty-xay-nha-may-rang-xay-moi-chuan-quoc-te-highlands-coffee-dua-ca-phe-rang-xay-viet-nam-len-ban-do-the-gioi.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/10_2023/LEDONGTHONHAMAY2023/thumbs/470_crop_1..jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>ĐẦU TƯ GẦN 500 TỶ XÂY NHÀ MÁY RANG XAY MỚI CHUẨN</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>09/10/2023, 22:55</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-mien-phi-giao-hang-goi-ngay-1900-1755.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/09_2023/thumbs/470_crop_DIGITAL_Website_thumbnail_470x314_1.jpg" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>HIGHLANDS COFFEE MIỄN PHÍ GIAO HÀNG | GỌI NGAY 1900 1755</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>15/09/2023, 18:04</span>
+                </div>
+                </a>
+            </div>
+            <div class="new-imgtitle">
+                <a href="https://www.highlandscoffee.com.vn/vn/-high-patch-he-lo-cap-doi-moi-cua-ly-biz.html" class="new-img">
+                    <div class="list-new">
+                        <img src="https://www.highlandscoffee.com.vn/vnt_upload/news/08_2023/thumbs/470_crop_banner1.png" alt="FREEZE TRÀ XANH">
+                    </div>
+                    <div class="list-tittle">
+                        <h4>[HIGH-PATCH] HÉ LỘ CẶP ĐÔI MỚI CỦA LY-BIZ</h4>
+                    </div>
+                </a>
+                <div class="date-time">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>25/08/2023, 23:31</span>
+                </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="btn-xemthem"><button id="loadMore">XEM THÊM</button></div>
+
+    <!-- INFORMATION-BAR -->
+    <div class="inform">
+        <div class="icons">
+            <a href="https://www.facebook.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCHEqa2uTf8uXrGWrnU3ThgA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/highlandscoffeevietnam/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p class="reserve">© 2018 Highlands Coffee. All rights reserved</p>
+        <p class="hotline">Đặt hàng: 19001755 </p>
+        <div class="email">
+            <a href="#"><i class="fa-solid fa-envelope"></i> &emsp; customerservice@highlandscoffee.com.vn</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="scriptcart.js"></script>
+    <script src="script-addnews.js"></script>
+
+</body>
+</html>
